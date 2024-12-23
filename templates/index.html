@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Добро пожаловать на сайт</h1>
+    <h2>Заполните данные</h2>
+    <form method="post">
+        {% csrf_token %}
+        <input type="text" name="subject" placeholder="Заголовок">
+        <input type="email" name="email" placeholder="Почта">
+        <input type="text" name="message" placeholder="Сообщение">
+        <input type="submit" value="Отправить">
+    </form>
+</body>
+</html>
